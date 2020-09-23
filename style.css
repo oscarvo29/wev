@@ -1,0 +1,155 @@
+/* Sætter variabler */
+:root {
+	/* standard color */
+	--grey-color: #c1c1c1;
+	--blue-color: #41a8e2;
+}
+
+/* Fjerner lat paddig og margin, imens jeg sætter padding og border til at være elements width og height.*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#wrapper {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+/* 
+                    ========================
+                            HEADER 
+                    ========================  
+*/
+header {
+	padding: 20px;
+	border-bottom: 1px solid var(--grey-color);
+}
+
+.top-nav {
+	width: 100%;
+	margin-top: 10px;
+	padding: 0 30px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid var(--grey-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.top-nav * {
+	padding: 0 0px;
+	cursor: pointer;
+}
+
+#sektioner {
+	display: flex;
+	font-size: 16px;
+	text-transform: uppercase;
+	align-items: center;
+}
+
+#sektioner * {
+	margin: 0 auto;
+	padding: 5px;
+}
+
+header .top-nav h2 {
+	font-size: 20px;
+	color: var(--grey-color);
+}
+
+#burger-menu {
+	padding: 0;
+}
+
+.burger-menu {
+	width: 10px;
+	height: 1px;
+	background: #000;
+	display: block;
+	margin: 10px;
+	border-radius: 10px;
+	transition: 0.3s;
+	padding: 0 10px;
+}
+
+/* Hover animations */
+#burger-menu:hover .burger-menu-bottem {
+	margin-top: 12px;
+}
+#burger-menu:hover .burger-menu-top {
+	margin-bottom: 12px;
+}
+
+header .img-container {
+	width: 1100px;
+	margin: 30px auto;
+	padding: 10px 0px;
+}
+
+header > .img-container img {
+	width: 100%;
+	height: auto;
+}
+
+/* 
+                    ========================
+                           	 MAIN 
+                    ========================  
+*/
+
+.main-article {
+	max-width: 1300px;
+	max-height: 600px;
+	margin: 40px auto;
+}
+
+.img-container-lead-article {
+	overflow: hidden;
+	height: 60vh;
+	position: relative;
+	/* 
+	
+	skjuler lidt af billedet. 
+	Derudover sætter jeg position til relative, fordi jeg skal bruge position absolute på teksten.
+	
+	
+	*/
+}
+
+main article .img-container-lead-article img {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+}
+
+.img-text-container {
+	text-align: center;
+	
+	width: 50%;
+	position: absolute;
+	z-index: 100;
+	left: 25%;
+	color: #fff;
+	top: 25%;
+	background-image: radial-gradient()
+}
+
+.bold  {
+	font-family: sans-serif;
+	font-weight: 600px;
+	font-size: calc(13vw / 3.75);
+	
+}
+
+.img-text-container > h2 {
+	line-height: calc(46 / 36);
+	font-weight: 400;
+	font-size: 38px;
+	margin: 15px;
+}
+
+
+
